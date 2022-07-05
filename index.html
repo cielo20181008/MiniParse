@@ -45,7 +45,6 @@
         }
 
         #combatantTable {
-            margin: 0;
             width: 100%;
             table-layout: fixed;
             border-collapse: collapse;
@@ -53,7 +52,6 @@
 
         /* キャラクターデータのテキストの設定 */
         #combatantTableBody * {
-            margin: 0;
             color: #E2EBF5;
             text-shadow: -1px 0 3px #217AA2, 0 1px 3px #217AA2, 1px 0 3px #217AA2, 0 -1px 3px #217AA2;
             font-weight: 300;
@@ -79,6 +77,7 @@
         }
 
     </style>
+    <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
     <script>
 
         //
@@ -104,7 +103,7 @@
         //
 
         // エンカウント情報の定義
-        var encounterDefine = "{title} / {CurrentZoneName} / Time: {duration} / DPS: {encdps}";
+        var encounterDefine = "{title} / Time: {duration} / DPS: {ENCDPS}";
 
         // 上記のエンカウント情報を HTML として扱うなら true
         var useHTMLEncounterDefine = false;
@@ -187,10 +186,9 @@
             document.documentElement.classList.remove("resizeHandle");
         }
 
-        // onOverlayDataUpdate イベントを購読
-        document.addEventListener("onOverlayDataUpdate", function (e) {
-            update(e.detail);
-        });
+        // CombatData イベントを購読
+        addOverlayListener("CombatData", (e) => update(e));
+        startOverlayEvents();
 
         // 表示要素の更新
         function update(data) {
@@ -200,6 +198,7 @@
             }
             updateCombatantList(data);
         }
+
         // エンカウント情報を更新する
         function updateEncounter(data) {
             // 要素取得
@@ -368,12 +367,5 @@
         <!-- ここに各キャラの情報が入る -->
     </table>
 
-</body>
-</head>
-<body class="resize-background">
-  <div id="container-limitbreak" class="bar"></div>
-  <div id="settings-container">
-    <div id="settings"></div>
-  </div>
 </body>
 </html>
