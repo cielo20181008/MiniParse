@@ -5,11 +5,11 @@
     <style>
 
         /*
-            •\¦İ’è (1)
+            è¡¨ç¤ºè¨­å®š (1)
         */
 
         * {
-            /* ƒtƒHƒ“ƒg iˆê•”‚ÌƒtƒHƒ“ƒg‚Íãè‚­“K—p‚³‚ê‚È‚¢j */
+            /* ãƒ•ã‚©ãƒ³ãƒˆ ï¼ˆä¸€éƒ¨ã®ãƒ•ã‚©ãƒ³ãƒˆã¯ä¸Šæ‰‹ãé©ç”¨ã•ã‚Œãªã„ï¼‰ */
             font-family: "Meiryo";
             font-size: 12px;
         }
@@ -21,21 +21,21 @@
         html {
             height: 100%;
 
-            /* ŠO˜g */
+            /* å¤–æ  */
             /*border: 1px solid rgba(0,0,0,0.1);*/
             
-            /* ‚Í‚İo‚½“à—e‚ÍƒXƒNƒ[ƒ‹ƒo[‚ğ•\¦‚³‚¹‚¸‚É‰B‚·
-             * ¡‚Ì‚Æ‚±‚ëAƒuƒ‰ƒEƒU‚Ö‚Ì“ü—Í‚Í‚Å‚«‚È‚¢‚Ì‚Å•\¦‚³‚¹‚Ä‚à–³ˆÓ–¡ */
+            /* ã¯ã¿å‡ºãŸå†…å®¹ã¯ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒãƒ¼ã‚’è¡¨ç¤ºã•ã›ãšã«éš ã™
+             * ä»Šã®ã¨ã“ã‚ã€ãƒ–ãƒ©ã‚¦ã‚¶ã¸ã®å…¥åŠ›ã¯ã§ããªã„ã®ã§è¡¨ç¤ºã•ã›ã¦ã‚‚ç„¡æ„å‘³ */
             overflow: hidden;
             
-            /* ”wŒiF */
+            /* èƒŒæ™¯è‰² */
             background-color: transparent;
         }
 
         .resizeHandle {
-            /* ƒŠƒTƒCƒY—p‚Ìƒnƒ“ƒhƒ‹
-             * ƒŠƒTƒCƒY‚ª‚Å‚«‚éêŠ‚ÍƒEƒBƒ“ƒhƒE‰E‰º‚Ì16x16ƒsƒNƒZƒ‹‚ÌêŠ
-             * ‚±‚Ì•”•ª‚ªŠ®‘S‚É“§–¾‚¾‚Æƒ}ƒEƒX“ü—Í‚ª“§‰ß‚µ‚Ä‚µ‚Ü‚Á‚ÄƒTƒCƒY‚ğ•ÏX‚Å‚«‚È‚­‚È‚é */
+            /* ãƒªã‚µã‚¤ã‚ºç”¨ã®ãƒãƒ³ãƒ‰ãƒ«
+             * ãƒªã‚µã‚¤ã‚ºãŒã§ãã‚‹å ´æ‰€ã¯ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦å³ä¸‹ã®16x16ãƒ”ã‚¯ã‚»ãƒ«ã®å ´æ‰€
+             * ã“ã®éƒ¨åˆ†ãŒå®Œå…¨ã«é€æ˜ã ã¨ãƒã‚¦ã‚¹å…¥åŠ›ãŒé€éã—ã¦ã—ã¾ã£ã¦ã‚µã‚¤ã‚ºã‚’å¤‰æ›´ã§ããªããªã‚‹ */
             background-image: url(handle.png);
             background-position: bottom right;
             background-repeat: no-repeat;
@@ -48,19 +48,19 @@
             border-collapse: collapse;
         }
 
-        /* ƒLƒƒƒ‰ƒNƒ^[ƒf[ƒ^‚ÌƒeƒLƒXƒg‚Ìİ’è */
+        /* ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ãƒ‡ãƒ¼ã‚¿ã®ãƒ†ã‚­ã‚¹ãƒˆã®è¨­å®š */
         #combatantTableBody * {
             color: #E2EBF5;
             text-shadow: -1px 0 3px #217AA2, 0 1px 3px #217AA2, 1px 0 3px #217AA2, 0 -1px 3px #217AA2;
             font-weight: 300;
 
-            /* ‚Í‚İo‚½ƒeƒLƒXƒg‚ğucv‚ÅÈ—ª‚·‚é */
+            /* ã¯ã¿å‡ºãŸãƒ†ã‚­ã‚¹ãƒˆã‚’ã€Œâ€¦ã€ã§çœç•¥ã™ã‚‹ */
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
         }
 
-        /* ƒGƒ“ƒJƒEƒ“ƒgî•ñ‚Æƒe[ƒuƒ‹ƒwƒbƒ_“à‚ÌƒeƒLƒXƒg‚Ìİ’è */
+        /* ã‚¨ãƒ³ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±ã¨ãƒ†ãƒ¼ãƒ–ãƒ«ãƒ˜ãƒƒãƒ€å†…ã®ãƒ†ã‚­ã‚¹ãƒˆã®è¨­å®š */
         #encounter,
         #combatantTableHeader * {
             color: #DED7BE;
@@ -69,7 +69,7 @@
             white-space: nowrap;
         }
 
-        /* ƒe[ƒuƒ‹ƒwƒbƒ_‚Ì‰ºü‚Ìİ’è */
+        /* ãƒ†ãƒ¼ãƒ–ãƒ«ãƒ˜ãƒƒãƒ€ã®ä¸‹ç·šã®è¨­å®š */
         #combatantTableHeader tr {
             border-bottom: 1px solid #DED7BE;
         }
@@ -78,7 +78,7 @@
     <script>
 
         //
-        // ƒvƒ‰ƒOƒCƒ“‘¤‚©‚çˆÈ‰º‚Ì‚æ‚¤‚È ActXiv ƒIƒuƒWƒFƒNƒg‚Æ‚µ‚Äƒf[ƒ^‚ª’ñ‹Ÿ‚³‚ê‚é
+        // ãƒ—ãƒ©ã‚°ã‚¤ãƒ³å´ã‹ã‚‰ä»¥ä¸‹ã®ã‚ˆã†ãª ActXiv ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨ã—ã¦ãƒ‡ãƒ¼ã‚¿ãŒæä¾›ã•ã‚Œã‚‹
         //
         // var ActXiv = {
         //    "Encounter": {...},
@@ -89,23 +89,23 @@
         //    }
         // };
         //
-        // ƒf[ƒ^‚ÌXV‚Í 1 •b–ˆB
+        // ãƒ‡ãƒ¼ã‚¿ã®æ›´æ–°ã¯ 1 ç§’æ¯ã€‚
         // 
-        // ƒvƒ‰ƒOƒCƒ“‚©‚ç onOverlayDataUpdate ƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚é‚Ì‚ÅA‚»‚ê‚ğóM‚·‚é‚±‚Æ‚à‚Å‚«‚é
-        // ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰‚Ì‘æˆêˆø”‚Ì detail ƒvƒƒpƒeƒB“à‚Éã‹L‚ÌƒIƒuƒWƒFƒNƒg‚ª“ü‚é
+        // ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‹ã‚‰ onOverlayDataUpdate ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œã‚‹ã®ã§ã€ãã‚Œã‚’å—ä¿¡ã™ã‚‹ã“ã¨ã‚‚ã§ãã‚‹
+        // ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©ã®ç¬¬ä¸€å¼•æ•°ã® detail ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£å†…ã«ä¸Šè¨˜ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒå…¥ã‚‹
         //
 
         //
-        // •\¦İ’è (2)
+        // è¡¨ç¤ºè¨­å®š (2)
         //
 
-        // ƒGƒ“ƒJƒEƒ“ƒgî•ñ‚Ì’è‹`
+        // ã‚¨ãƒ³ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±ã®å®šç¾©
         var encounterDefine = "{title} / {CurrentZoneName} / Time: {duration} / DPS: {encdps}";
 
-        // ã‹L‚ÌƒGƒ“ƒJƒEƒ“ƒgî•ñ‚ğ HTML ‚Æ‚µ‚Äˆµ‚¤‚È‚ç true
+        // ä¸Šè¨˜ã®ã‚¨ãƒ³ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±ã‚’ HTML ã¨ã—ã¦æ‰±ã†ãªã‚‰ true
         var useHTMLEncounterDefine = false;
 
-        // ƒwƒbƒ_‚Ì’è‹`
+        // ãƒ˜ãƒƒãƒ€ã®å®šç¾©
         var headerDefine =
         [
           //  { html: "<img src='Job{JobOrName}.png.png',width='15' height='15' />", width: "5%", align: "center" },
@@ -119,7 +119,7 @@
             { text: "Dead", width: "0.2%", align: "center" },
         ];
 
-        // •\¦‚·‚éƒf[ƒ^‚Ì’è‹`
+        // è¡¨ç¤ºã™ã‚‹ãƒ‡ãƒ¼ã‚¿ã®å®šç¾©
         var bodyDefine =
         [
             //{ text: rankingText, width: "5%", align: "center", effect: deadYatsuEffect },
@@ -133,40 +133,40 @@
             { text: "{deaths}", width: "0.2%", align: "center" },
         ];
 
-        // ‡ˆÊ‚ğ•\¦‚·‚éitext ‚ÉŠÖ”‚ğw’è‚·‚é—áj
-        // ˆø”:
-        //  combatant : ƒLƒƒƒ‰ƒNƒ^[‚Ìƒf[ƒ^Bcombatant["..."]‚Åƒf[ƒ^‚ğæ“¾‚Å‚«‚éB
-        //  index : ƒLƒƒƒ‰ƒNƒ^[‚Ì•À‚Ñ‡Bˆê”Ôã‚Í 0 ‚ÅA‚»‚ÌŒã‚Í 1 ‚¸‚Â‘‚¦‚éB
-        // –ß‚è’l: 
-        //  •\¦‚·‚éƒeƒLƒXƒgB
-        //  ACT ‚Ìƒ^ƒO‚Í“WŠJ‚³‚ê‚È‚¢‚Ì‚ÅA“WŠJ‚µ‚½‚¢ê‡‚Í parseActFormat ŠÖ”‚ğg—p‚µ‚Ä‚­‚¾‚³‚¢B
+        // é †ä½ã‚’è¡¨ç¤ºã™ã‚‹ï¼ˆtext ã«é–¢æ•°ã‚’æŒ‡å®šã™ã‚‹ä¾‹ï¼‰
+        // å¼•æ•°:
+        //  combatant : ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®ãƒ‡ãƒ¼ã‚¿ã€‚combatant["..."]ã§ãƒ‡ãƒ¼ã‚¿ã‚’å–å¾—ã§ãã‚‹ã€‚
+        //  index : ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®ä¸¦ã³é †ã€‚ä¸€ç•ªä¸Šã¯ 0 ã§ã€ãã®å¾Œã¯ 1 ãšã¤å¢—ãˆã‚‹ã€‚
+        // æˆ»ã‚Šå€¤: 
+        //  è¡¨ç¤ºã™ã‚‹ãƒ†ã‚­ã‚¹ãƒˆã€‚
+        //  ACT ã®ã‚¿ã‚°ã¯å±•é–‹ã•ã‚Œãªã„ã®ã§ã€å±•é–‹ã—ãŸã„å ´åˆã¯ parseActFormat é–¢æ•°ã‚’ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚
         function rankingText(combatant, index) {
-            // 1 ‚©‚çn‚Ü‚é”Ô†‚ğ•Ô‚·
+            // 1 ã‹ã‚‰å§‹ã¾ã‚‹ç•ªå·ã‚’è¿”ã™
             return (index + 1).toString();
         }
         
-        // €–S“z‚ğÔ‚­‚·‚éieffect ‚Ì—áj
-        // ˆø”:
-        //  cell : ƒZƒ‹‚Ì DOM —v‘f
-        //  combatant : ƒLƒƒƒ‰ƒNƒ^[‚Ìƒf[ƒ^Bcombatant["..."]‚Åƒf[ƒ^‚ğæ“¾‚Å‚«‚éB
-        //  index: ƒLƒƒƒ‰ƒNƒ^[‚Ì•À‚Ñ‡Bˆê”Ôã‚Í 0 ‚ÅA‚»‚ÌŒã‚Í 1 ‚¸‚Â‘‚¦‚éB
-        // –ß‚è’l: ‚È‚µ
+        // æ­»äº¡å¥´ã‚’èµ¤ãã™ã‚‹ï¼ˆeffect ã®ä¾‹ï¼‰
+        // å¼•æ•°:
+        //  cell : ã‚»ãƒ«ã® DOM è¦ç´ 
+        //  combatant : ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®ãƒ‡ãƒ¼ã‚¿ã€‚combatant["..."]ã§ãƒ‡ãƒ¼ã‚¿ã‚’å–å¾—ã§ãã‚‹ã€‚
+        //  index: ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®ä¸¦ã³é †ã€‚ä¸€ç•ªä¸Šã¯ 0 ã§ã€ãã®å¾Œã¯ 1 ãšã¤å¢—ãˆã‚‹ã€‚
+        // æˆ»ã‚Šå€¤: ãªã—
         function deadYatsuEffect(cell, combatant, index) {
-            // ƒfƒX”‚ğ®”’l‚É•ÏŠ·
+            // ãƒ‡ã‚¹æ•°ã‚’æ•´æ•°å€¤ã«å¤‰æ›
             var deaths = parseInt(combatant["deaths"]);
-            // ƒfƒX”‚ª 0 ‚æ‚è‚à‘å‚«‚¢‚È‚ç
+            // ãƒ‡ã‚¹æ•°ãŒ 0 ã‚ˆã‚Šã‚‚å¤§ãã„ãªã‚‰
             if (deaths > 0) {
-                // Ô‚­‚·‚é
+                // èµ¤ãã™ã‚‹
                 cell.style.color = "#FFA0A0";
                 cell.style.textShadow = "-1px 0 3px #802020, 0 1px 3px #802020, 1px 0 3px #802020, 0 -1px 3px #802020";
             }
         }
 
         //
-        // ˆÈ‰º•\¦—pƒXƒNƒŠƒvƒg
+        // ä»¥ä¸‹è¡¨ç¤ºç”¨ã‚¹ã‚¯ãƒªãƒ—ãƒˆ
         //
 
-        // onOverlayStateUpdate ƒCƒxƒ“ƒg‚ğw“Ç
+        // onOverlayStateUpdate ã‚¤ãƒ™ãƒ³ãƒˆã‚’è³¼èª­
         document.addEventListener("onOverlayStateUpdate", function (e) {
             if (!e.detail.isLocked) {
                 displayResizeHandle();
@@ -183,12 +183,12 @@
             document.documentElement.classList.remove("resizeHandle");
         }
 
-        // onOverlayDataUpdate ƒCƒxƒ“ƒg‚ğw“Ç
+        // onOverlayDataUpdate ã‚¤ãƒ™ãƒ³ãƒˆã‚’è³¼èª­
         document.addEventListener("onOverlayDataUpdate", function (e) {
             update(e.detail);
         });
 
-        // •\¦—v‘f‚ÌXV
+        // è¡¨ç¤ºè¦ç´ ã®æ›´æ–°
         function update(data) {
             updateEncounter(data);
             if (document.getElementById("combatantTableHeader") == null) {
@@ -196,12 +196,12 @@
             }
             updateCombatantList(data);
         }
-        // ƒGƒ“ƒJƒEƒ“ƒgî•ñ‚ğXV‚·‚é
+        // ã‚¨ãƒ³ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±ã‚’æ›´æ–°ã™ã‚‹
         function updateEncounter(data) {
-            // —v‘fæ“¾
+            // è¦ç´ å–å¾—
             var encounterElem = document.getElementById('encounter');
 
-            // ƒeƒLƒXƒgæ“¾
+            // ãƒ†ã‚­ã‚¹ãƒˆå–å¾—
             var elementText;
             if (typeof encounterDefine === 'function') {
                 elementText = encounterDefine(data.Encounter);
@@ -216,7 +216,7 @@
                 return;
             }
 
-            // ƒeƒLƒXƒgİ’è
+            // ãƒ†ã‚­ã‚¹ãƒˆè¨­å®š
             if (!useHTMLEncounterDefine) {
                 encounterElem.innerText = parseActFormat(elementText, data.Encounter);
             } else {
@@ -224,7 +224,7 @@
             }
         }
 
-        // ƒwƒbƒ_‚ğXV‚·‚é
+        // ãƒ˜ãƒƒãƒ€ã‚’æ›´æ–°ã™ã‚‹
         function updateCombatantListHeader() {
             var table = document.getElementById('combatantTable');
             var tableHeader = document.createElement("thead");
@@ -233,20 +233,20 @@
 
             for (var i = 0; i < headerDefine.length; i++) {
                 var cell = document.createElement("th");
-                // ƒeƒLƒXƒgİ’è
+                // ãƒ†ã‚­ã‚¹ãƒˆè¨­å®š
                 if (typeof headerDefine[i].text !== 'undefined') {
                     cell.innerText = headerDefine[i].text;
                 } else if (typeof headerDefine[i].html !== 'undefined') {
                     cell.innerHTML = headerDefine[i].html;
                 }
-                // •İ’è
+                // å¹…è¨­å®š
                 cell.style.width = headerDefine[i].width;
                 cell.style.maxWidth = headerDefine[i].width;
-                // ‰¡Œ‹‡”İ’è
+                // æ¨ªçµåˆæ•°è¨­å®š
                 if (typeof headerDefine[i].span !== 'undefined') {
                     cell.colSpan = headerDefine[i].span;
                 }
-                // s‘µ‚¦İ’è
+                // è¡Œæƒãˆè¨­å®š
                 if (typeof headerDefine[i].align !== 'undefined') {
                     cell.style["textAlign"] = headerDefine[i].align;
                 }
@@ -256,15 +256,15 @@
             table.tHead = tableHeader;
         }
 
-        // ƒvƒŒƒCƒ„[ƒŠƒXƒg‚ğXV‚·‚é
+        // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒªã‚¹ãƒˆã‚’æ›´æ–°ã™ã‚‹
         function updateCombatantList(data) {
-            // —v‘fæ“¾•ì¬
+            // è¦ç´ å–å¾—ï¼†ä½œæˆ
             var table = document.getElementById('combatantTable');
             var oldTableBody = table.tBodies.namedItem('combatantTableBody');
             var newTableBody = document.createElement("tbody");
             newTableBody.id = "combatantTableBody";
 
-            // tbody ‚Ì“à—e‚ğì¬
+            // tbody ã®å†…å®¹ã‚’ä½œæˆ
             var combatantIndex = 0;
             for (var combatantName in data.Combatant) {
                 var combatant = data.Combatant[combatantName];
@@ -272,7 +272,7 @@
                 for (var i = 0; i < bodyDefine.length; i++)
                 {
                     var cell = tableRow.insertCell(i);
-                    // ƒeƒLƒXƒgİ’è
+                    // ãƒ†ã‚­ã‚¹ãƒˆè¨­å®š
                     if (typeof bodyDefine[i].text !== 'undefined') {
                         var cellText;
                         if (typeof bodyDefine[i].text === 'function') {
@@ -290,14 +290,14 @@
                         }
                         cell.innerHTML = cellHTML;
                     }
-                    // •İ’è
+                    // å¹…è¨­å®š
                     cell.style.width = bodyDefine[i].width;
                     cell.style.maxWidth = bodyDefine[i].width;
-                    // s\‚¦İ’è
+                    // è¡Œæ§‹ãˆè¨­å®š
                     if (typeof(bodyDefine[i].align) !== 'undefined') {
                         cell.style.textAlign = bodyDefine[i].align;
                     }
-                    // ƒGƒtƒFƒNƒgÀs
+                    // ã‚¨ãƒ•ã‚§ã‚¯ãƒˆå®Ÿè¡Œ
                     if (typeof bodyDefine[i].effect === 'function') {
                         bodyDefine[i].effect(cell, combatant, combatantIndex);
                     }
@@ -305,7 +305,7 @@
                 combatantIndex++;
             }
 
-            // tbody ‚ªŠù‚É‘¶İ‚µ‚Ä‚¢‚½‚ç’uŠ·A‚»‚¤‚Å‚È‚¢‚È‚çƒe[ƒuƒ‹‚É’Ç‰Á
+            // tbody ãŒæ—¢ã«å­˜åœ¨ã—ã¦ã„ãŸã‚‰ç½®æ›ã€ãã†ã§ãªã„ãªã‚‰ãƒ†ãƒ¼ãƒ–ãƒ«ã«è¿½åŠ 
             if (oldTableBody != void(0)) {
                 table.replaceChild(newTableBody, oldTableBody);
             }
@@ -314,7 +314,7 @@
             }
         }
 
-        // Miniparse ƒtƒH[ƒ}ƒbƒg•¶š—ñ‚ğ‰ğÍ‚µA•\¦•¶š—ñ‚ğæ“¾‚·‚é
+        // Miniparse ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆæ–‡å­—åˆ—ã‚’è§£æã—ã€è¡¨ç¤ºæ–‡å­—åˆ—ã‚’å–å¾—ã™ã‚‹
         function parseActFormat(str, dictionary)
         {
             var result = "";
@@ -356,12 +356,12 @@
 
     <div id="encounter">
         No data to show.
-        <!-- ‚±‚±‚ÉƒGƒ“ƒJƒEƒ“ƒgî•ñ‚ª“ü‚é -->
+        <!-- ã“ã“ã«ã‚¨ãƒ³ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±ãŒå…¥ã‚‹ -->
     </div>
 
     <table id="combatantTable">
-        <!-- ‚±‚±‚Éƒwƒbƒ_‚ª“ü‚é -->
-        <!-- ‚±‚±‚ÉŠeƒLƒƒƒ‰‚Ìî•ñ‚ª“ü‚é -->
+        <!-- ã“ã“ã«ãƒ˜ãƒƒãƒ€ãŒå…¥ã‚‹ -->
+        <!-- ã“ã“ã«å„ã‚­ãƒ£ãƒ©ã®æƒ…å ±ãŒå…¥ã‚‹ -->
     </table>
 
 </body>
