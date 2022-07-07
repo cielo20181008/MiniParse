@@ -111,14 +111,13 @@
         [
             { text: " ", width: "0.1%" , align: "center" },
             { text: "Name", width: "0.6%", align: "left" },
-            { text: "Job", width: "0.2%", align: "left" },
+            { text: "Job", width: "0.2%", align: "center" },
             { text: "DPS (%)", width: "0.4%", align: "center"},
             { text: "damage(%)", width: "0.4%", align: "center"},
             { text: "HPS", width: "0.3%", align: "center" },
             { text: "Healed(%)", width: "0.4%", align: "center"},
             { text: "OH", width: "0.2%", align: "center"},
             { text: "Dead", width: "0.2%", align: "center" },
-	    //{ text: "test", width: "0.2%", align: "center" },
         ];
 
         // 表示するデータの定義
@@ -126,14 +125,13 @@
         [
             { text: rankingText, width: "0.1%" , align: "center"},
             { text: namereplace, width: "0.7%" },
-            { html: "<img src='jobicon/Job{Job}.png',width='20' height='20' />", width: "0.2%", align: "left" },
+            { html: "<img src='jobicon/Job{Job}.png',width='20' height='20' />", width: "0.2%", align: "center" },
             { text: "{encdps}", width: "0.4%", align: "center" },
             { text: "{damage%}", width: "0.4%", align: "center" },
             { text: "{enchps}", width: "0.3%", align: "center" },
             { text: "{healed%}", width: "0.4%", align: "center" },
             { text: "{OverHealPct}", width: "0.2%", align: "center" },
             { text: "{deaths}", width: "0.2%", align: "center", effect: deadYatsuEffect },
-	    //{ text: "test", width: "0.2%", align: "center" },
         ];
 
         // 順位を表示する（text に関数を指定する例）
